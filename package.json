@@ -1,0 +1,25 @@
+{
+  "name": "gardenshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaRychkova1/GardenShop.git"
+  },
+  "keywords": [
+    "garden",
+    "shop",
+    "ecommerce",
+    "plants"
+  ],
+  "author": "Anna Rychkova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnaRychkova1/GardenShop/issues"
+  },
+  "homepage": "https://github.com/AnnaRychkova1/GardenShop#readme"
+}
