@@ -1,11 +1,11 @@
 /* @import url("./reset.css"); */
-@import url("./main.css");
-@import url("./home.css");
-@import url("./gallery.css");
-@import url("./contacts.css");
-@import url("./header.css");
-@import url("./footer.css");
-@import url("./swiper.css");
+@import url("main.css");
+@import url("home.css");
+@import url("gallery.css");
+@import url("contacts.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("swiper.css");
 
 :root {
   font-family: "DM Sans", sans-serif;
