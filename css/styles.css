@@ -1,10 +1,11 @@
-@import url("./reset.css");
+/* @import url("./reset.css"); */
 @import url("./main.css");
 @import url("./home.css");
 @import url("./gallery.css");
 @import url("./contacts.css");
 @import url("./header.css");
 @import url("./footer.css");
+@import url("./swiper.css");
 
 :root {
   font-family: "DM Sans", sans-serif;
@@ -19,7 +20,7 @@
 
   --background-main: #f6f6f6;
 
-  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --animation: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

@@ -4,86 +4,227 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <title>Garden Shop</title>
+    <!-- Bootstrap styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Swiper styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <a
-        href="https://www.thegardenshop.ie/"
-        class="logo-link"
-        target="_blank"
-        rel="”nofollow”"
+    <header class="header container-fluid py-3 row w-100 align-items-center">
+      <div class="col-4 col-md-3">
+        <a
+          href="https://www.thegardenshop.ie/"
+          class="logo-link"
+          target="_blank"
+          rel="nofollow"
+        >
+          <img src="./images/logo.png" alt="logo" class="img-fluid" />
+        </a>
+      </div>
+      <div class="col-4 col-md-3 d-flex justify-content-start d-flex d-lg-none">
+        <img src="./images/cart.png" alt="cart" class="img-fluid" />
+        <p>euros</p>
+      </div>
+
+      <nav
+        class="navbar navbar-expand-lg col-4 col-md-6 col-lg-7 d-flex justify-content-center"
       >
-        <img src="./images/logo.png" alt="logo" />
-      </a>
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="./" class="nav-link">Home Page</a>
-          </li>
-          <li class="nav-item">
-            <a href="./gallery.html" class="nav-link">Garden Plants</a>
-          </li>
-          <li class="nav-item">
-            <a href="./contacts.html" class="nav-link">Contact Us</a>
-          </li>
-        </ul>
+        <div class="container-fluid d-flex justify-content-end">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse fs-5"
+            id="navbarSupportedContent"
+          >
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 nav-fill gap-2 p-2 rounded-5 shadow-sm w-100"
+              style="
+                --bs-nav-link-color: #ffffff;
+
+                background-color: #a1bf42;
+              "
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active rounded-5 p-3"
+                  aria-current="page"
+                  href="./"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded-5 p-3" href="./gallery.html"
+                  >Garden Plants</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded-5 p-3" href="./contacts.html">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <img src="./images/cart.png" alt="cart" />
+      <div
+        class="col-4 col-md-3 col-lg-2 d-flex justify-content-end d-none d-lg-flex"
+      >
+        <img src="./images/cart.png" alt="cart" class="img-fluid" />
+        <p>euros</p>
+      </div>
     </header>
+
     <main>
-      <h1>Home Page</h1>
+      <h1>Welcome to GardenShop — Everything for Your Garden!</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/slider/bench.jpg" />
+            <h3>Bring Your Garden to Life with Our Products!</h3>
+            <p>
+              Welcome to GardenShop, your trusted partner in creating and
+              maintaining the garden of your dreams. Here you will find a wide
+              range of products for all stages of gardening — from seeds to
+              professional tools. We are dedicated to helping you make your
+              garden beautiful, cozy, and productive.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slider/firewood.jpg" />
+            <h3>High-Quality Plants and Seedlings</h3>
+            <p>
+              In our store, you’ll find the best plants and seedlings for your
+              garden. From vibrant flowers to delicious fruit trees, we offer
+              only certified and tested varieties that will ensure your garden
+              looks great and yields a rich harvest.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slider/garden.jpg" />
+            <h3>Modern Tools and Equipment</h3>
+            <p>
+              To make gardening both enjoyable and efficient, we offer a wide
+              selection of tools and equipment. From classic hand tools to
+              modern electric devices, we have everything you need for any task
+              in your garden.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slider/planting.jpg" />
+            <h3>Care for Your Garden with Love, and We’ll Help You!</h3>
+            <p>
+              At GardenShop, we don’t just sell products; we also provide
+              helpful advice and recommendations. Visit our blog to learn more
+              about gardening tips and get inspired to create your perfect
+              garden space.
+            </p>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="images/slider/plants.jpg" />
+            <h3>Sustainable Gardening for a Greener Future</h3>
+            <p>
+              At GardenShop, we believe in the importance of sustainable
+              gardening practices. That’s why we offer eco-friendly products,
+              organic seeds, and environmentally safe tools to help you create a
+              garden that’s not only beautiful but also kind to the planet.
+              Whether you're a beginner or an experienced gardener, we have
+              everything you need to grow your garden while protecting the
+              environment for future generations.
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
     </main>
     <footer>
       <h3>Follow us</h3>
-      <a
-        href=" https://www.facebook.com/TheGardenShop.ie"
-        target="_blank"
-        rel="”nofollow”"
-      >
-        <img
-          src="images/network-icons/facebook.png"
-          class="network-icon"
-          alt="The Garden Shop Facebook Page"
-        />
-      </a>
-
-      <a
-        href=" https://twitter.com/GardenShop_ie"
-        target="_blank"
-        rel="”nofollow”"
-      >
-        <img
-          src="images/network-icons/twitter.png"
-          class="network-icon"
-          alt="The Garden Shop Twitter Page"
-        />
-      </a>
-
-      <a
-        href="https://www.youtube.com/user/TheGardenShopIreland"
-        target="_blank"
-        rel="”nofollow”"
-      >
-        <img
-          src="images/network-icons/youtube.png"
-          class="network-icon"
-          alt="The Garden Shop YouTube Channel"
-        />
-      </a>
-
-      <a
-        href="https://www.pinterest.com/thegardenshop1/"
-        target="_blank"
-        rel="”nofollow”"
-      >
-        <img
-          src="images/network-icons/pintertest.png"
-          class="network-icon"
-          alt="The Garden Shop Pinterest Page"
-        />
-      </a>
+      <ul class="network-list">
+        <li>
+          <a
+            href=" https://www.facebook.com/TheGardenShop.ie"
+            target="_blank"
+            rel="”nofollow”"
+          >
+            <img
+              src="images/network-icons/facebook.png"
+              class="network-icon"
+              alt="The Garden Shop Facebook Page"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href=" https://twitter.com/GardenShop_ie"
+            target="_blank"
+            rel="”nofollow”"
+          >
+            <img
+              src="images/network-icons/twitter.png"
+              class="network-icon"
+              alt="The Garden Shop Twitter Page"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/user/TheGardenShopIreland"
+            target="_blank"
+            rel="”nofollow”"
+          >
+            <img
+              src="images/network-icons/youtube.png"
+              class="network-icon"
+              alt="The Garden Shop YouTube Channel"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.pinterest.com/thegardenshop1/"
+            target="_blank"
+            rel="”nofollow”"
+          >
+            <img
+              src="images/network-icons/pintertest.png"
+              class="network-icon"
+              alt="The Garden Shop Pinterest Page"
+            />
+          </a>
+        </li>
+      </ul>
     </footer>
+    <!-- Bootstrap script js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Slider script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="js/swiper.js"></script>
   </body>
 </html>

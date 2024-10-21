@@ -1,0 +1,44 @@
+.navbar-toggler {
+  border: 2px solid #769839;
+  transition: all var(--animation);
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible {
+  border: 2px solid #a1bf42;
+  outline: #769839;
+}
+
+.navbar-toggler:focus {
+  border: 4px solid #a1bf42;
+  box-shadow: 2px 2px rgba(161, 191, 66, 0.2);
+}
+
+.active {
+  background-color: #ffffff;
+  color: #a1bf42;
+  transition: all var(--animation);
+}
+.nav-link {
+  transition: all var(--animation);
+}
+
+.nav-link:hover {
+  background-color: #769839 !important;
+  color: #73412e !important;
+}
+
+@media (max-width: 992px) {
+  #navbarSupportedContent {
+    position: fixed;
+    top: 14%;
+    left: 0;
+    right: 0;
+    z-index: 1050;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+}
