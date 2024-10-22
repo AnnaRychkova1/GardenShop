@@ -1,0 +1,32 @@
+.my-carousel {
+  height: 100vh;
+  height: 75vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  left: 0;
+  right: 0;
+  bottom: 4.5em;
+  padding: 1em 7em;
+  background-color: rgba(222, 229, 198, 0.6);
+  box-shadow: 0 0 10px rgba(161, 191, 66, 0.5);
+  text-align: center;
+  height: auto;
+}
+
+.carousel-indicators button {
+  background-color: var(--accent-green) !important;
+  border: 2px solid var(--accent-green) !important;
+}
+
+.carousel-indicators button.active {
+  background-color: var(--accent-light-color) !important;
+  border: 2px solid var(--accent-light-color) !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 42px;
+  height: 42px;
+}

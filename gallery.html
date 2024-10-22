@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header container-fluid py-3 row w-100 align-items-center">
+    <header
+      class="header container-fluid py-3 row w-100 align-items-center my-header"
+    >
       <div class="col-4 col-md-3">
         <a
           href="https://www.thegardenshop.ie/"
@@ -24,12 +26,27 @@
           target="_blank"
           rel="nofollow"
         >
-          <img src="images/logo.png" alt="logo" class="img-fluid" />
+          <img
+            src="images/logo.png"
+            alt="logo"
+            class="img-fluid placeholder-wave"
+          />
         </a>
       </div>
-      <div class="col-4 col-md-3 d-flex justify-content-start d-flex d-lg-none">
-        <img src="images/cart.png" alt="cart" class="img-fluid" />
-        <p>euros</p>
+      <!-- When screen-width is < lg the cart is between logo and nav-bar -->
+      <div
+        class="col-4 col-md-3 d-flex justify-content-start align-items-center d-flex d-lg-none gap-3"
+      >
+        <button type="button" class="btn position-relative">
+          <img src="images/cart.png" alt="cart" class="placeholder-wave" />
+          <span
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger my-cart-quantity"
+          >
+            99+
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </button>
+        <p class="my-cart-sum fs-6 mb-0">Cart is empty</p>
       </div>
 
       <nav
@@ -81,17 +98,28 @@
           </div>
         </div>
       </nav>
+      <!-- When screen-width is > lg the cart is at the end of the header -->
       <div
-        class="col-4 col-md-3 col-lg-2 d-flex justify-content-end d-none d-lg-flex"
+        class="col-4 col-md-3 col-lg-2 d-flex justify-content-end align-items-center d-none d-lg-flex gap-3"
       >
-        <img src="images/cart.png" alt="cart" class="img-fluid" />
-        <p>euros</p>
+        <button type="button" class="btn position-relative">
+          <img src="images/cart.png" alt="cart" class="placeholder-wave" />
+          <span
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger my-cart-quantity"
+          >
+            99+
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </button>
+        <p class="my-cart-sum fs-6 mb-0">Cart is empty</p>
       </div>
     </header>
+
     <main>
       <h2 class="gallery-header">Garden Plants</h2>
     </main>
-    <footer>
+
+    <footer class="container-fluid py-3 row w-100 align-items-center my-footer">
       <h3>Follow us</h3>
       <ul>
         <li>
@@ -102,7 +130,7 @@
           >
             <img
               src="images/network-icons/facebook.png"
-              class="network-icon"
+              class="network-icon placeholder-wave"
               alt="The Garden Shop Facebook Page"
             />
           </a>
@@ -115,7 +143,7 @@
           >
             <img
               src="images/network-icons/twitter.png"
-              class="network-icon"
+              class="network-icon placeholder-wave"
               alt="The Garden Shop Twitter Page"
             />
           </a>
@@ -128,7 +156,7 @@
           >
             <img
               src="images/network-icons/youtube.png"
-              class="network-icon"
+              class="network-icon placeholder-wave"
               alt="The Garden Shop YouTube Channel"
             />
           </a>
@@ -141,7 +169,7 @@
           >
             <img
               src="images/network-icons/pintertest.png"
-              class="network-icon"
+              class="network-icon placeholder-wave"
               alt="The Garden Shop Pinterest Page"
             />
           </a>
@@ -154,5 +182,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- Custom js -->
+    <script defer src="js/index.js"></script>
   </body>
 </html>
