@@ -7,3 +7,7 @@
 .my-submit-btn:focus-visible {
   background-color: var(--accent-dark-color);
 }
+
+.my-address-link {
+  color: var(--accent-dark-color);
+}
