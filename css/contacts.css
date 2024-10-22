@@ -1,1 +1,9 @@
+.my-submit-btn {
+  background-color: var(--dark-green);
+}
 
+.my-submit-btn:hover,
+.my-submit-btn:focus,
+.my-submit-btn:focus-visible {
+  background-color: var(--accent-dark-color);
+}
