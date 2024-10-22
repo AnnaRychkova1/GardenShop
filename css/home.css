@@ -1,3 +1,22 @@
 .my-main-h {
   text-shadow: 2px 2px 4px var(--accent-light-color);
 }
+
+.my-benefits-list {
+  list-style: none;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.my-benefits-item {
+  box-shadow: 0px 2px 5px #c7c7c7;
+}
+
+.my-link {
+  color: #767676;
+}
+
+.my-cour-h {
+  text-shadow: 2px 2px 4px var(--accent-light-color);
+  color: var(--brown-color);
+}

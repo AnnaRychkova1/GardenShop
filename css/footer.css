@@ -1,9 +1,22 @@
 .my-footer {
   background-color: var(--my-bg);
   box-shadow: -4px -4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0;
 }
 
-.network-list {
-  display: flex;
-  flex-direction: row;
+.my-network-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.my-footer-copyright {
+  background-color: var(--brown-color);
+}
+
+.my-footer-h {
+  text-shadow: 2px 2px 4px rgba(147, 217, 106, 0.6);
+}
+
+.my-copyright-link:hover {
+  color: var(--accent-dark-color) !important;
 }
