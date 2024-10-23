@@ -1,3 +1,8 @@
+.my-contact-h {
+  color: var(--brown-color);
+  text-shadow: 2px 2px 4px rgba(147, 217, 106, 0.6);
+}
+
 .my-submit-btn {
   background-color: var(--accent-light-color);
 }
