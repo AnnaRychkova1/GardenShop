@@ -207,7 +207,7 @@
       <!-- Contact Form -->
       <section class="container my-5">
         <h3 class="text-center mb-3">Contact Form</h3>
-        <form>
+        <form class="my-form">
           <div>
             <h4>Contact information</h4>
             <div class="px-0 row mb-3">
@@ -215,7 +215,13 @@
                 >Email</label
               >
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail" />
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  name="email"
+                  required
+                />
               </div>
             </div>
             <div class="px-0 row mb-3">
@@ -223,7 +229,13 @@
                 >Name</label
               >
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputName" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  name="name"
+                  required
+                />
               </div>
             </div>
             <div class="px-0 row mb-3">
@@ -231,7 +243,12 @@
                 >Phone</label
               >
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputPhone" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputPhone"
+                  name="phone"
+                />
               </div>
             </div>
           </div>
@@ -242,7 +259,13 @@
                 >Subject</label
               >
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputSubject" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputSubject"
+                  name="subject"
+                  required
+                />
               </div>
             </div>
             <div class="px-0 row mb-3">
@@ -254,6 +277,8 @@
                   class="form-control"
                   id="inputMessage"
                   rows="4"
+                  name="message"
+                  required
                 ></textarea>
               </div>
             </div>
@@ -265,6 +290,26 @@
             Submit
           </button>
         </form>
+        <!-- Bootstrap Toast -->
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+          <div
+            id="successToast"
+            class="toast align-items-center text-bg-success border-0"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
+            <div class="d-flex">
+              <div class="toast-body">Form submitted successfully!</div>
+              <button
+                type="button"
+                class="btn-close btn-close-white me-2 m-auto"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Google Maps -->
       <section class="container my-5 d-flex flex-column align-items-center">
@@ -274,27 +319,31 @@
           Portarlington, R32 RPX8, Co. Laois
         </p>
         <!-- map for screen width < md -->
-        <iframe
-          class="d-block d-md-none placeholder-wave"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4785.374970551832!2d-7.167791!3d53.151703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485d75a30555b77f%3A0xcf9aa1fa1bf6967b!2sTheGardenShop.ie!5e0!3m2!1sen!2sie!4v1729632368171!5m2!1sen!2sie"
-          width="400"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div class="placeholder-wave">
+          <iframe
+            class="d-block d-md-none"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4785.374970551832!2d-7.167791!3d53.151703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485d75a30555b77f%3A0xcf9aa1fa1bf6967b!2sTheGardenShop.ie!5e0!3m2!1sen!2sie!4v1729632368171!5m2!1sen!2sie"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
         <!-- map for screen width > md -->
-        <iframe
-          class="d-none d-md-block placeholder-wave"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4785.374970551832!2d-7.167791!3d53.151703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485d75a30555b77f%3A0xcf9aa1fa1bf6967b!2sTheGardenShop.ie!5e0!3m2!1sen!2sus!4v1729628908931!5m2!1sen!2sus"
-          width="800"
-          height="600"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div class="placeholder-wave">
+          <iframe
+            class="d-none d-md-block"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4785.374970551832!2d-7.167791!3d53.151703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485d75a30555b77f%3A0xcf9aa1fa1bf6967b!2sTheGardenShop.ie!5e0!3m2!1sen!2sus!4v1729628908931!5m2!1sen!2sus"
+            width="800"
+            height="600"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </main>
     <footer class="container-fluid row w-100 align-items-center my-footer">
@@ -309,7 +358,7 @@
             >
               <img
                 src="images/network-icons/facebook.png"
-                class="network-icon placeholder-wave"
+                class="placeholder-wave"
                 alt="The Garden Shop Facebook Page"
               />
             </a>
@@ -322,7 +371,7 @@
             >
               <img
                 src="images/network-icons/twitter.png"
-                class="network-icon placeholder-wave"
+                class="placeholder-wave"
                 alt="The Garden Shop Twitter Page"
               />
             </a>
@@ -335,7 +384,7 @@
             >
               <img
                 src="images/network-icons/youtube.png"
-                class="network-icon placeholder-wave"
+                class="placeholder-wave"
                 alt="The Garden Shop YouTube Channel"
               />
             </a>
@@ -348,7 +397,7 @@
             >
               <img
                 src="images/network-icons/pintertest.png"
-                class="network-icon placeholder-wave"
+                class="placeholder-wave"
                 alt="The Garden Shop Pinterest Page"
               />
             </a>
@@ -365,7 +414,7 @@
           </p>
           <div class="d-flex gap-3 mt-2">
             <a
-              class="my-copyright-link text-decoration-none text-black fs-6"
+              class="my-copyright-link my-after-link text-decoration-none text-black fs-6"
               href="https://www.thegardenshop.ie/privacy-policy/"
               target="_blank"
               rel="”nofollow”"

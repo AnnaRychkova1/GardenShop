@@ -20,3 +20,13 @@
 .my-copyright-link:hover {
   color: var(--accent-dark-color) !important;
 }
+
+.my-after-link::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 70%;
+  background-color: var(--accent-dark-color);
+  margin-left: 18px;
+  margin-right: 0;
+}
