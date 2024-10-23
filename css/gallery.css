@@ -1,3 +1,11 @@
-.gallery-header {
-  color: var(--accent-light-color);
+.my-supermenu {
+  background-color: var(--brown-color);
+}
+.my-supermenu-btn {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.my-supermenu-btn:hover,
+.my-supermenu-btn:focus {
+  color: var(--accent-light-color) !important;
 }

@@ -16,6 +16,13 @@
   color: #767676;
 }
 
+.my-benefits-item:hover,
+.my-benefits-item:focus,
+.my-benefits-item:focus-visible {
+  background-color: rgba(161, 191, 66, 0.3) !important;
+  box-shadow: 2px 2px 5px var(--accent-light-color);
+}
+
 .my-cour-h {
   text-shadow: 2px 2px 4px var(--accent-light-color);
   color: var(--brown-color);

@@ -1,0 +1,236 @@
+[
+  {
+    "type": "indoor",
+    "name": "Aloe Vera Plant (10.5cm Pot)",
+    "rating": "3",
+    "availability": "true",
+    "discounted": "true",
+    "price": "4.49",
+    "src": [
+      "images/garden-plants/indoors/aloe-vera-plant-1.jpg",
+      "images/garden-plants/indoors/aloe-vera-plant-2.jpg"
+    ]
+  },
+  {
+    "type": "indoor",
+    "name": "Snake Plant (9cm Pot)",
+    "rating": "5",
+    "availability": "true",
+    "discounted": "true",
+    "price": "6.79",
+    "src": [
+      "images/garden-plants/indoors/snake-plant-1.jpg",
+      "images/garden-plants/indoors/snake-plant-2.jpg",
+      "images/garden-plants/indoors/snake-plant-3.jpg"
+    ]
+  },
+  {
+    "type": "indoor",
+    "name": "Mixed Cactus Plant (1L Pot)",
+    "rating": "5",
+    "availability": "true",
+    "discounted": "false",
+    "price": "7.99",
+    "src": ["images/garden-plants/indoors/mixed-cactus-plants.jpg"]
+  },
+  {
+    "type": "indoor",
+    "name": "Poinsettia Plant (1L Pot)",
+    "rating": "5",
+    "availability": "false",
+    "discounted": "true",
+    "price": "7.49",
+    "src": ["images/garden-plants/indoors/poinsettia-1.jpg"]
+  },
+  {
+    "type": "indoor",
+    "name": "Variegated Spider Plant (1L Pot)",
+    "rating": "4",
+    "availability": "false",
+    "discounted": "true",
+    "price": "5.39",
+    "src": ["images/garden-plants/indoors/spider-plant.jpg"]
+  },
+  {
+    "type": "climbing",
+    "name": "Hydrangea Climbing Plant (2ft)",
+    "rating": "5",
+    "availability": "true",
+    "discounted": "false",
+    "price": "9.99",
+    "src": [
+      "images/garden-plants/climbing/hydrangea-climbing-plant-1.jpg",
+      "images/garden-plants/climbing/hydrangea-climbing-plant-2.jpg",
+      "images/garden-plants/climbing/hydrangea-climbing-plant-3.jpg",
+      "images/garden-plants/climbing/hydrangea-climbing-plant-4.jpg"
+    ]
+  },
+  {
+    "type": "climbing",
+    "name": "Clematis 'The President' Climbing Plant (60-80cm)",
+    "rating": "5",
+    "availability": "true",
+    "discounted": "false",
+    "price": "13.49",
+    "src": [
+      "images/garden-plants/climbing/clematis-climbing-plants-president.jpg"
+    ]
+  },
+  {
+    "type": "climbing",
+    "name": "Clematis 'Montana' Climbing Plant (2L Pot)",
+    "rating": "5",
+    "availability": "true",
+    "discounted": "false",
+    "price": "12.99",
+    "src": [
+      "images/garden-plants/climbing/clematis-climbing-plant-1.jpg",
+      "images/garden-plants/climbing/clematis-climbing-plant-baby-star.jpg"
+    ]
+  },
+  {
+    "type": "bulbs",
+    "name": "Crocus Bulbs 'Jeanne D'Arc' (20 Pack)",
+    "rating": "5",
+    "availability": "true",
+    "discounted": "false",
+    "price": "5.99",
+    "src": ["images/garden-plants/bulbs/crocus-bulbs-jeanne-darc.jpg"]
+  },
+  {
+    "type": "bulbs",
+    "name": "Tulip Bulbs 'Apeldoorn Elite' (12 Pack)",
+    "rating": "5",
+    "availability": "true",
+    "discounted": "true",
+    "price": "3.99",
+    "src": ["images/garden-plants/bulbs/tulip-bulbs-apeldoorn-elite.jpg"]
+  },
+  {
+    "type": "bulbs",
+    "name": "Mount Hood Daffodil Bulbs (3Kg)",
+    "rating": "3",
+    "availability": "true",
+    "discounted": "false",
+    "price": "4.99",
+    "src": [
+      "images/garden-plants/bulbs/mount-hood-daffodil-bulb-1.jpg",
+      "images/garden-plants/bulbs/mount-hood-daffodil-bulb-2.jpg"
+    ]
+  },
+  {
+    "type": "bulbs",
+    "name": "Fritillary Bulbs 'Fritillaria Meleagris Mixed' (10 Pack)",
+    "rating": "3",
+    "availability": "true",
+    "discounted": "false",
+    "price": "2.29",
+    "src": ["images/garden-plants/bulbs/fritillaria-bulbs-meleagris-mixed.jpg"]
+  },
+  {
+    "type": "bulbs",
+    "name": "Tulip Bulbs 'Apricot Beauty' (12 Pack)",
+    "rating": "5",
+    "availability": "true",
+    "discounted": "true",
+    "price": "4.69",
+    "src": ["images/garden-plants/bulbs/tulip-bulbs-apricot-beauty.jpg"]
+  },
+  {
+    "type": "fruit-herbs",
+    "name": "Raspberry Canes 'Malling Promise' (2L Pot)",
+    "rating": "5",
+    "availability": "true",
+    "discounted": "false",
+    "price": "7.99 ",
+    "src": ["images/garden-plants/fruit-herbs/raspberry-canes.jpg"]
+  },
+  {
+    "type": "fruit-herbs",
+    "name": "Blueberry Plants (2L Pot)",
+    "rating": "5",
+    "availability": "true",
+    "discounted": "true",
+    "price": "8.99",
+    "src": ["images/garden-plants/fruit-herbs/blueberry-plants.jpg"]
+  },
+  {
+    "type": "fruit-herbs",
+    "name": "Rosemary Plant (1L Pot)",
+    "rating": "4",
+    "availability": "true",
+    "discounted": "false",
+    "price": "11.99 ",
+    "src": ["images/garden-plants/fruit-herbs/rosemary-plant.jpg"]
+  },
+
+  {
+    "type": "trees",
+    "name": "Dwarf Weeping Willow Tree (3L Pot)",
+    "rating": "5",
+    "availability": "true",
+    "discounted": "false",
+    "price": "19.99",
+    "src": [
+      "images/garden-plants/trees/dwarf-weeping-willow-1.jpg",
+      "images/garden-plants/trees/dwarf-weeping-willow-2.jpg",
+      "images/garden-plants/trees/dwarf-weeping-willow-3.jpg",
+      "images/garden-plants/trees/dwarf-weeping-willow-4.jpg",
+      "images/garden-plants/trees/dwarf-weeping-willow-5.jpg"
+    ]
+  },
+  {
+    "type": "trees",
+    "name": "Magnolia Susan Tree (3L Pot)",
+    "rating": "5",
+    "availability": "true",
+    "discounted": "true",
+    "price": "19.99",
+    "src": [
+      "images/garden-plants/trees/magnolia-tree-1.jpg",
+      "images/garden-plants/trees/magnolia-tree-2.jpg",
+      "images/garden-plants/trees/magnolia-tree-3.jpg",
+      "images/garden-plants/trees/magnolia-tree-4.jpg"
+    ]
+  },
+  {
+    "type": "trees",
+    "name": "White Lilac Tree (5L Pot)",
+    "rating": "5",
+    "availability": "false",
+    "discounted": "true",
+    "price": "14.99",
+    "src": [
+      "images/garden-plants/trees/lilac-trees-1.jpg",
+      "images/garden-plants/trees/lilac-trees-2.jpg",
+      "images/garden-plants/trees/lilac-trees-3.jpg",
+      "images/garden-plants/trees/lilac-trees-4.jpg"
+    ]
+  },
+  {
+    "type": "trees",
+    "name": "Lilac Tree 'Charles Joly' (5L Pot)",
+    "rating": "5",
+    "availability": "true",
+    "discounted": "false",
+    "price": "24.99",
+    "src": [
+      "images/garden-plants/trees/lilac-tree-royalty-1.jpg",
+      "images/garden-plants/trees/lilac-tree-royalty-2.jpg",
+      "images/garden-plants/trees/lilac-tree-royalty-3.jpg"
+    ]
+  },
+  {
+    "type": "trees",
+    "name": "Cherry Blossom Tree Royal Burgundy (5L Pot)",
+    "rating": "5",
+    "availability": "false",
+    "discounted": "false",
+    "price": "33.99",
+    "src": [
+      "images/garden-plants/trees/cherry-blossoms-trees-1.jpg",
+      "images/garden-plants/trees/cherry-blossoms-trees-2.jpg",
+      "images/garden-plants/trees/cherry-blossoms-trees-3.jpg"
+    ]
+  }
+]

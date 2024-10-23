@@ -78,19 +78,19 @@
             >
               <li class="nav-item">
                 <a
-                  class="nav-link rounded-5 p-3"
+                  class="nav-link rounded-5 p-2"
                   aria-current="page"
                   href="index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link rounded-5 p-3" href="gallery.html"
+                <a class="nav-link rounded-5 p-2" href="gallery.html"
                   >Garden Plants</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active rounded-5 p-3" href="contacts.html">
+                <a class="nav-link active rounded-5 p-2" href="contacts.html">
                   Contacts
                 </a>
               </li>
@@ -114,7 +114,7 @@
         <p class="my-cart-sum fs-6 mb-0">Cart is empty</p>
       </div>
     </header>
-    <main class="container-fluid mt-5">
+    <main class="mt-5">
       <!-- Contact Info -->
       <section class="container my-5">
         <h2 class="text-center mb-4 fw-bolder fs-2 my-contact-h">Contact Us</h2>
@@ -208,84 +208,94 @@
       <section class="container my-5">
         <h3 class="text-center mb-3 my-contact-h">Contact Form</h3>
         <form class="my-form">
-          <div>
+          <div class="d-flex flex-column gap-3">
             <h4>Contact information</h4>
             <div class="px-0 row mb-3">
-              <label for="inputEmail" class="px-0 col-sm-2 col-form-label"
+              <label for="inputEmail" class="px-0 col-2 col-form-label"
                 >Email</label
               >
-              <div class="col-sm-10">
+              <div class="col-10 position-relative">
                 <input
                   type="email"
                   class="form-control"
                   id="inputEmail"
                   name="email"
+                  placeholder="example@gmail.com"
                   required
                 />
+                <div class="invalid-feedback" id="emailError"></div>
               </div>
             </div>
             <div class="px-0 row mb-3">
-              <label for="inputName" class="px-0 col-sm-2 col-form-label"
+              <label for="inputName" class="px-0 col-2 col-form-label"
                 >Name</label
               >
-              <div class="col-sm-10">
+              <div class="col-10 position-relative">
                 <input
                   type="text"
                   class="form-control"
                   id="inputName"
                   name="name"
+                  placeholder="Your name"
                   required
                 />
+                <div class="invalid-feedback" id="nameError"></div>
               </div>
             </div>
             <div class="px-0 row mb-3">
-              <label for="inputPhone" class="px-0 col-sm-2 col-form-label"
+              <label for="inputPhone" class="px-0 col-2 col-form-label"
                 >Phone</label
               >
-              <div class="col-sm-10">
+              <div class="col-10 position-relative">
                 <input
                   type="text"
                   class="form-control"
                   id="inputPhone"
+                  placeholder="087-111-11-11"
                   name="phone"
                 />
+                <div class="invalid-feedback" id="phoneError"></div>
               </div>
             </div>
           </div>
-          <div>
+          <div class="d-flex flex-column gap-3">
             <h4>Message</h4>
             <div class="px-0 row mb-3">
-              <label for="inputSubject" class="px-0 col-sm-2 col-form-label"
+              <label for="inputSubject" class="px-0 col-2 col-form-label"
                 >Subject</label
               >
-              <div class="col-sm-10">
+              <div class="col-10 position-relative">
                 <input
                   type="text"
                   class="form-control"
                   id="inputSubject"
                   name="subject"
+                  placeholder="Reason for contacting us"
                   required
                 />
+                <div class="invalid-feedback" id="subjectError"></div>
               </div>
             </div>
             <div class="px-0 row mb-3">
-              <label for="inputMessage" class="px-0 col-sm-2 col-form-label"
+              <label for="inputMessage" class="px-0 col-2 col-form-label"
                 >Message</label
               >
-              <div class="col-sm-10">
+              <div class="col-10 position-relative">
                 <textarea
                   class="form-control"
                   id="inputMessage"
-                  rows="4"
+                  rows="6"
                   name="message"
+                  placeholder="Please describe your question or issue..."
                   required
                 ></textarea>
+                <div class="invalid-feedback" id="messageError"></div>
               </div>
             </div>
           </div>
           <button
             type="submit"
-            class="my-submit-btn btn text-white fs-5 px-5 py-2"
+            class="my-submit-btn btn text-white fs-5 px-5 py-2 mt-2"
           >
             Submit
           </button>
@@ -437,5 +447,6 @@
     ></script>
     <!-- Custom js -->
     <script defer src="js/index.js"></script>
+    <script defer src="js/form.js"></script>
   </body>
 </html>

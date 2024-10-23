@@ -78,19 +78,19 @@
             >
               <li class="nav-item">
                 <a
-                  class="nav-link rounded-5 p-3"
+                  class="nav-link rounded-5 p-2"
                   aria-current="page"
                   href="index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active rounded-5 p-3" href="gallery.html"
+                <a class="nav-link active rounded-5 p-2" href="gallery.html"
                   >Garden Plants</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link rounded-5 p-3" href="contacts.html">
+                <a class="nav-link rounded-5 p-2" href="contacts.html">
                   Contacts
                 </a>
               </li>
@@ -115,7 +115,92 @@
       </div>
     </header>
     <main>
-      <h2 class="gallery-header">Garden Plants</h2>
+      <section class="container">
+        <h2 class="my-contact-h text-center fs-2 my-4 fw-bolder">
+          Garden Plants
+        </h2>
+        <form action="">
+          <label><input type="text" /></label>
+        </form>
+        <div class="my-supermenu bg-gradient p-2 rounded-2">
+          <ul
+            class="d-flex flex-row align-items-center justify-content-around mb-0 list-unstyled"
+          >
+            <li>
+              <a
+                href="#indoor"
+                class="bg-transparent text-decoration-none fs-6 fw-medium text-white p-2 my-supermenu-btn"
+              >
+                Indoor Plants
+              </a>
+            </li>
+            <li>
+              <a
+                href="#climbing"
+                class="bg-transparent text-decoration-none fs-6 fw-medium text-white p-2 my-supermenu-btn"
+              >
+                Climbing Plants
+              </a>
+            </li>
+            <li>
+              <a
+                href="#bulbs"
+                class="bg-transparent text-decoration-none fs-6 fw-medium text-white p-2 my-supermenu-btn"
+              >
+                Flower Bulbs
+              </a>
+            </li>
+            <li>
+              <a
+                href="#fruit-herbs"
+                class="bg-transparent text-decoration-none fs-6 fw-medium text-white p-2 my-supermenu-btn"
+              >
+                Fruit & Herb Plants
+              </a>
+            </li>
+            <li>
+              <a
+                href="#trees"
+                class="bg-transparent text-decoration-none fs-6 fw-medium text-white p-2 my-supermenu-btn"
+              >
+                Trees
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="container">
+        <div class="p-3">
+          <h3 class="my-gallery-type my-contact-h text-center" id="indoor">
+            Indoor Plants
+          </h3>
+          <ul class="my-indoor-plants"></ul>
+        </div>
+        <div class="p-3">
+          <h3 class="my-gallery-type my-contact-h text-center" id="climbing">
+            Climbing Plants
+          </h3>
+          <ul class="my-climbing-plants"></ul>
+        </div>
+        <div class="p-3">
+          <h3 class="my-gallery-type my-contact-h text-center" id="bulbs">
+            Flower Bulbs
+          </h3>
+          <ul class="my-bulbs-plants"></ul>
+        </div>
+        <div class="p-3">
+          <h3 class="my-gallery-type my-contact-h text-center" id="fruit-herbs">
+            Fruit & Herb Plants
+          </h3>
+          <ul class="my-fruit-plants"></ul>
+        </div>
+        <div class="p-3">
+          <h3 class="my-gallery-type my-contact-h text-center" id="trees">
+            Trees
+          </h3>
+          <ul class="my-trees-plants"></ul>
+        </div>
+      </section>
     </main>
     <footer class="container-fluid row w-100 align-items-center my-footer">
       <div
