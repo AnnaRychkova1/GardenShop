@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // catch my plants.json data as response
-  fetch("/json/plants.json")
+  fetch("json/plants.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
