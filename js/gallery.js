@@ -32,21 +32,19 @@ document.addEventListener("DOMContentLoaded", function () {
               /\s+/g,
               ""
             )}" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            
-                <div class="carousel-inner">
-                    ${plant.src
-                      .map(
-                        (image, index) => `
-                    <div class="carousel-item ${index === 0 ? "active" : ""}">
-                        <img src="${image}" class="d-block w-100 rounded-1" alt="${
-                          plant.name
-                        }" style="width:150px; height:300px;">
-                    </div>
-                    `
-                      )
-                      .join("")}
+            <div class="carousel-inner">
+                ${plant.src
+                  .map(
+                    (image, index) => `
+                <div class="carousel-item ${index === 0 ? "active" : ""}">
+                    <img src="${image}" class="d-block w-100 rounded-1" alt="${
+                      plant.name
+                    }" style="width:150px; height:300px;">
                 </div>
-
+                `
+                  )
+                  .join("")}
+            </div>
          ${
            plant.src.length > 1
              ? `<button class="carousel-control-prev custom-carousel-control" type="button" data-bs-target="#carousel-${plant.name.replace(
@@ -65,10 +63,9 @@ document.addEventListener("DOMContentLoaded", function () {
         </button >`
              : ""
          }
-         <p class="mb-0 text-center">${createStarRating(plant.rating)}</p>
+        <p class="mb-0 text-center">${createStarRating(plant.rating)}</p>
         </div>
-        <div class="p-3">
-            
+        <div class="p-3">  
             <h4 class="fs-5 fw-bold">${plant.name}</h4>
             <p class="mb-0">Price:<span class="fw-bold my-price-text"> &euro;${
               plant.price
@@ -120,14 +117,14 @@ document.addEventListener("DOMContentLoaded", function () {
         // Handle adding quantity
         if (event.target.classList.contains("my-add-btn")) {
           console.log("hi");
-          const quantityElement = event.target.nextElementSibling;
+          const quantityElement = event.target.previousElementSibling;
           let currentQuantity = parseInt(quantityElement.textContent, 10);
           quantityElement.textContent = currentQuantity + 1;
         }
 
         // Handle subtracting quantity
         if (event.target.classList.contains("my-subtract-btn")) {
-          const quantityElement = event.target.previousElementSibling;
+          const quantityElement = event.target.nextElementSibling;
           let currentQuantity = parseInt(quantityElement.textContent, 10);
 
           // Ensure quantity doesn't go below 1
