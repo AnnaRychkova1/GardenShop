@@ -18,7 +18,8 @@
 .my-climbing-plants,
 .my-bulbs-plants,
 .my-fruit-plants,
-.my-trees-plants {
+.my-trees-plants,
+.my-search-plants {
   gap: 30px 18px;
 }
 
@@ -66,24 +67,26 @@
   padding-bottom: 0.75rem !important;
 }
 
-.my-add-btn:hover,
-.my-add-btn:focus,
-.my-add-btn:focus-visible,
-.my-subtract-btn:hover,
-.my-subtract-btn:focus,
-.my-subtract-btn:focus-visible {
-  background-color: var(--accent-dark-color);
-  color: var(--bs-white);
-}
-
 .my-add-to-cart-btn {
   background-color: var(--accent-light-color);
   color: var(--brown-color) !important;
 }
 
+.my-add-btn:hover,
+.my-add-btn:focus,
+.my-add-btn:focus-visible,
+.my-subtract-btn:hover,
+.my-subtract-btn:focus,
+.my-subtract-btn:focus-visible,
 .my-add-to-cart-btn:hover,
 .my-add-to-cart-btn:focus,
 .my-add-to-cart-btn:focus-visible {
   background-color: var(--accent-dark-color);
   color: var(--bs-white) !important;
+}
+
+.my-add-btn:disabled,
+.my-subtract-btn:disabled,
+.my-add-to-cart-btn:disabled {
+  background-color: var(--accent-light-color);
 }

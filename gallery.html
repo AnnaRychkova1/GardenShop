@@ -119,8 +119,13 @@
         <h2 class="my-contact-h text-center fs-2 my-4 fw-bolder">
           Garden Plants
         </h2>
-        <form action="">
-          <label><input type="text" /></label>
+        <form id="my-plant-search-form" action="">
+          <label for="my-search-input"></label>
+          <input
+            type="text"
+            id="my-search-input"
+            placeholder="Search for a plant..."
+          />
         </form>
         <div class="my-supermenu bg-gradient p-2 rounded-2">
           <ul
@@ -170,59 +175,72 @@
         </div>
       </section>
       <section class="container">
-        <div class="py-3">
-          <h3
-            class="my-gallery-type my-contact-h my-bg-color text-center bg-gradient rounded-2 p-2"
-            id="indoor"
-          >
-            Indoor Plants
-          </h3>
-          <ul
-            class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-indoor-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
-          ></ul>
+        <div class="my-main-gallery p-0 m-0">
+          <div class="py-3">
+            <h3
+              class="my-gallery-type my-contact-h my-bg-color text-center bg-gradient rounded-2 p-2"
+              id="indoor"
+            >
+              Indoor Plants
+            </h3>
+            <ul
+              class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-indoor-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
+            ></ul>
+          </div>
+          <div class="py-3">
+            <h3
+              class="my-gallery-type my-contact-h my-bg-color text-center bg-gradient rounded-2 p-2"
+              id="climbing"
+            >
+              Climbing Plants
+            </h3>
+            <ul
+              class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-climbing-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
+            ></ul>
+          </div>
+          <div class="py-3">
+            <h3
+              class="my-gallery-type my-contact-h my-bg-color text-center bg-gradient rounded-2 p-2"
+              id="bulbs"
+            >
+              Flower Bulbs
+            </h3>
+            <ul
+              class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-bulbs-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
+            ></ul>
+          </div>
+          <div class="py-3">
+            <h3
+              class="my-gallery-type my-contact-h my-bg-color text-center bg-gradient rounded-2 p-2"
+              id="fruit-herbs"
+            >
+              Fruit & Herb Plants
+            </h3>
+            <ul
+              class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-fruit-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
+            ></ul>
+          </div>
+          <div class="py-3">
+            <h3
+              class="my-gallery-type my-contact-h my-bg-color text-center bg-gradient rounded-2 p-2"
+              id="trees"
+            >
+              Trees
+            </h3>
+            <ul
+              class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-trees-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
+            ></ul>
+          </div>
         </div>
-        <div class="py-3">
+        <div class="py-3 my-search-gallery visually-hidden">
           <h3
             class="my-gallery-type my-contact-h my-bg-color text-center bg-gradient rounded-2 p-2"
-            id="climbing"
+            id="search"
           >
-            Climbing Plants
+            All plants by search
           </h3>
           <ul
-            class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-climbing-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
-          ></ul>
-        </div>
-        <div class="py-3">
-          <h3
-            class="my-gallery-type my-contact-h my-bg-color text-center bg-gradient rounded-2 p-2"
-            id="bulbs"
-          >
-            Flower Bulbs
-          </h3>
-          <ul
-            class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-bulbs-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
-          ></ul>
-        </div>
-        <div class="py-3">
-          <h3
-            class="my-gallery-type my-contact-h my-bg-color text-center bg-gradient rounded-2 p-2"
-            id="fruit-herbs"
-          >
-            Fruit & Herb Plants
-          </h3>
-          <ul
-            class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-fruit-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
-          ></ul>
-        </div>
-        <div class="py-3">
-          <h3
-            class="my-gallery-type my-contact-h my-bg-color text-center bg-gradient rounded-2 p-2"
-            id="trees"
-          >
-            Trees
-          </h3>
-          <ul
-            class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-trees-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
+            class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-search-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
           ></ul>
         </div>
       </section>
