@@ -90,3 +90,35 @@
 .my-add-to-cart-btn:disabled {
   background-color: var(--accent-light-color);
 }
+
+#my-search-input {
+  width: 250px;
+  border: 2px solid var(--accent-dark-color);
+  box-shadow: 0px 4px 4px rgba(161, 191, 66, 0.2);
+}
+
+#my-search-input:focus-visible {
+  outline: none;
+  border: 3px solid var(--accent-dark-color);
+  box-shadow: 0px 4px 8px rgba(161, 191, 66, 0.2),
+    0 -4px 8px rgba(161, 191, 66, 0.2);
+}
+
+#my-plant-search-form {
+  position: absolute;
+  top: 0px;
+  right: 16px;
+  width: 250px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .my-contact-main-h {
+    margin-right: 260px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .my-contact-main-h {
+    margin-right: 300px;
+  }
+}
