@@ -1,9 +1,9 @@
+// import updateCartInfo from "cart-list";
+
 const mainGallery = document.querySelector(".my-main-gallery");
 const searchGallery = document.querySelector(".my-search-gallery");
 const searchList = document.querySelector(".my-search-plants");
 const searchInput = document.getElementById("my-search-input");
-const cartQuantityElement = document.querySelectorAll(".my-cart-quantity");
-const cartSumElement = document.querySelectorAll(".my-cart-sum");
 
 document.addEventListener("DOMContentLoaded", function () {
   // fetch my plants.json data
@@ -33,8 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
       handleClickAddCart(event, plantsData)
     );
   });
-
-  updateCartInfo();
 });
 
 // function for fetching data from JSON
@@ -175,7 +173,11 @@ function handleClickAddCart(event, plantsData) {
     }
 
     localStorage.setItem("cart", JSON.stringify(currentCart));
-    alert("Item added to cart!");
+
+    // toast call
+    const toastElement = document.getElementById("successToastAdd");
+    const toast = new bootstrap.Toast(toastElement);
+    toast.show();
 
     updateCartInfo();
   }
@@ -247,30 +249,4 @@ function createPlantList(plant) {
       </div>
     </li>
     `;
-}
-
-// Function to count quantity and sum in cart
-function updateCartInfo() {
-  const cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-  const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
-  const totalSum = cart
-    .reduce((sum, item) => sum + item.price * item.quantity, 0)
-    .toFixed(2);
-
-  if (totalQuantity === 0) {
-    cartQuantityElement.forEach((element) => {
-      element.textContent = "";
-    });
-    cartSumElement.forEach((element) => {
-      element.textContent = "Cart is empty";
-    });
-  } else {
-    cartQuantityElement.forEach((element) => {
-      element.textContent = totalQuantity;
-    });
-    cartSumElement.forEach((element) => {
-      element.textContent = `Total: €${totalSum}`;
-    });
-  }
 }

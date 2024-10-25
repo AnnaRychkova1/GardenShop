@@ -49,10 +49,20 @@
             <span class="visually-hidden">Total sum</span>
           </span>
         </button>
-        <p class="my-cart-sum fs-6 mb-0"></p>
+        <div class="d-flex align-items-center">
+          <p class="my-cart-sum fs-6 mb-0"></p>
+          <div class="dropdown">
+            <button
+              class="dropdown-toggle btn"
+              data-bs-toggle="dropdown"
+              aria-label="Show Cart"
+            ></button>
+            <ul class="dropdown-menu my-cart-list"></ul>
+          </div>
+        </div>
       </div>
       <nav
-        class="navbar navbar-expand-lg col-4 col-md-6 col-lg-7 d-flex justify-content-center"
+        class="navbar navbar-expand-lg col-4 col-md-6 d-flex justify-content-center"
       >
         <div class="container-fluid d-flex justify-content-end">
           <button
@@ -97,7 +107,7 @@
       </nav>
       <!-- When screen-width is > lg the cart is at the end of the header -->
       <div
-        class="col-4 col-md-3 col-lg-2 justify-content-end align-items-center d-none d-lg-flex gap-3"
+        class="col-4 col-md-3 justify-content-end align-items-center d-none d-lg-flex gap-3"
       >
         <button
           type="button"
@@ -111,7 +121,17 @@
             <span class="visually-hidden">Total sum</span>
           </span>
         </button>
-        <p class="my-cart-sum fs-6 mb-0"></p>
+        <div class="d-flex align-items-center">
+          <p class="my-cart-sum fs-6 mb-0"></p>
+          <div class="dropdown">
+            <button
+              class="dropdown-toggle btn"
+              data-bs-toggle="dropdown"
+              aria-label="Show Cart"
+            ></button>
+            <ul class="dropdown-menu my-cart-list"></ul>
+          </div>
+        </div>
       </div>
     </header>
     <main class="mt-5">
@@ -448,7 +468,7 @@
     ></script>
     <!-- Custom js -->
     <script defer src="js/index.js"></script>
+    <script defer src="js/cart-list.js"></script>
     <script defer src="js/form.js"></script>
-    <script defer src="js/gallery.js"></script>
   </body>
 </html>
