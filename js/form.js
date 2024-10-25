@@ -27,8 +27,8 @@ document.querySelector(".my-form").addEventListener("submit", function (event) {
   let isValid = true;
 
   // Clear all previous error messages
-  document.querySelectorAll(".invalid-feedback").forEach(function (el) {
-    el.classList.remove("show-error");
+  document.querySelectorAll(".my-invalid-feedback").forEach(function (el) {
+    el.classList.remove("my-show-error");
   });
 
   // Re-validate all fields again on submit
@@ -80,10 +80,10 @@ function validateEmail() {
       emailError.textContent = "Invalid email format.";
     }
 
-    emailError.classList.add("show-error");
+    emailError.classList.add("my-show-error");
     return false;
   } else {
-    emailError.classList.remove("show-error");
+    emailError.classList.remove("my-show-error");
     return true;
   }
 }
@@ -96,19 +96,19 @@ function validateName() {
   // Check if the field is empty
   if (name.validity.valueMissing) {
     nameError.textContent = "Name is required."; // Error message for empty field
-    nameError.classList.add("show-error");
+    nameError.classList.add("my-show-error");
     return false;
   }
 
   // Check the length
   if (name.value.length < 3 || name.value.length > 10) {
     nameError.textContent = "Name must be between 3 and 10 characters.";
-    nameError.classList.add("show-error");
+    nameError.classList.add("my-show-error");
     return false;
   }
 
   // If all checks pass, remove error messages
-  nameError.classList.remove("show-error");
+  nameError.classList.remove("my-show-error");
   return true;
 }
 
@@ -121,10 +121,10 @@ function validatePhone() {
   const phoneRegex = /^\d{10}$/;
   if (!phoneRegex.test(phone.value)) {
     phoneError.textContent = "Phone number must be exactly 10 digits.";
-    phoneError.classList.add("show-error");
+    phoneError.classList.add("my-show-error");
     return false;
   } else {
-    phoneError.classList.remove("show-error");
+    phoneError.classList.remove("my-show-error");
     return true;
   }
 }
@@ -137,16 +137,16 @@ function validateSubject() {
   // Check if the field is empty
   if (!subject.value) {
     subjectError.textContent = "Subject is required.";
-    subjectError.classList.add("show-error");
+    subjectError.classList.add("my-show-error");
     return false;
 
     // Check the length
   } else if (subject.value.length < 3 || subject.value.length > 20) {
     subjectError.textContent = "Subject must be between 3 and 20 characters.";
-    subjectError.classList.add("show-error");
+    subjectError.classList.add("my-show-error");
     return false;
   } else {
-    subjectError.classList.remove("show-error");
+    subjectError.classList.remove("my-show-error");
     return true;
   }
 }
@@ -159,16 +159,16 @@ function validateMessage() {
   // Check if the field is empty
   if (!message.value) {
     messageError.textContent = "Message is required.";
-    messageError.classList.add("show-error");
+    messageError.classList.add("my-show-error");
     return false;
 
     // Check the length
   } else if (message.value.length < 6 || message.value.length > 500) {
     messageError.textContent = "Message must be between 6 and 500 characters.";
-    messageError.classList.add("show-error");
+    messageError.classList.add("my-show-error");
     return false;
   } else {
-    messageError.classList.remove("show-error");
+    messageError.classList.remove("my-show-error");
     return true;
   }
 }

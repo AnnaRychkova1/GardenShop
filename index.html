@@ -12,13 +12,12 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header
-      class="header container-fluid py-3 row w-100 align-items-center my-header"
+      class="header container-fluid py-3 row align-items-center my-header"
     >
       <div class="col-4 col-md-3">
         <a
@@ -36,9 +35,13 @@
       </div>
       <!-- When screen-width is < lg the cart is between logo and nav-bar -->
       <div
-        class="col-4 col-md-3 d-flex justify-content-start align-items-center d-flex d-lg-none gap-3"
+        class="col-4 col-md-3 d-flex justify-content-start align-items-center d-lg-none gap-3"
       >
-        <button type="button" class="btn position-relative">
+        <button
+          type="button"
+          class="btn position-relative"
+          aria-label="View Cart"
+        >
           <img src="images/cart.png" alt="cart" class="placeholder-wave" />
           <span
             class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger my-cart-quantity"
@@ -49,7 +52,6 @@
         </button>
         <p class="my-cart-sum fs-6 mb-0">Cart is empty</p>
       </div>
-
       <nav
         class="navbar navbar-expand-lg col-4 col-md-6 col-lg-7 d-flex justify-content-center"
       >
@@ -70,7 +72,7 @@
             id="navbarSupportedContent"
           >
             <ul
-              class="navbar-nav me-auto mb-2 mb-lg-0 nav-fill gap-2 p-2 rounded-5 shadow-sm w-100 my-nav"
+              class="navbar-nav me-auto mb-2 mb-lg-0 nav-fill gap-2 p-2 rounded-5 shadow-sm w-100 my-nav-list"
             >
               <li class="nav-item">
                 <a
@@ -96,9 +98,13 @@
       </nav>
       <!-- When screen-width is > lg the cart is at the end of the header -->
       <div
-        class="col-4 col-md-3 col-lg-2 d-flex justify-content-end align-items-center d-none d-lg-flex gap-3"
+        class="col-4 col-md-3 col-lg-2 justify-content-end align-items-center d-none d-lg-flex gap-3"
       >
-        <button type="button" class="btn position-relative">
+        <button
+          type="button"
+          class="btn position-relative"
+          aria-label="View Cart"
+        >
           <img src="images/cart.png" alt="cart" class="placeholder-wave" />
           <span
             class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger my-cart-quantity"
@@ -153,7 +159,11 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="2000">
-              <img src="images/carousel/bench.jpg" class="w-100 my-carousel" />
+              <img
+                src="images/carousel/bench.jpg"
+                class="w-100 my-carousel"
+                alt="slides"
+              />
               <div class="carousel-caption d-block">
                 <h3 class="fs-2 fw-bold my-cour-h">
                   Bring Your Garden to Life with Our Products!
@@ -170,6 +180,7 @@
             <div class="carousel-item" data-bs-interval="2000">
               <img
                 src="images/carousel/planting.jpg"
+                alt="slides"
                 class="w-100 my-carousel"
               />
               <div class="carousel-caption d-block">
@@ -187,6 +198,7 @@
             <div class="carousel-item" data-bs-interval="2000">
               <img
                 src="images/carousel/equipment.jpg"
+                alt="slides"
                 class="w-100 my-carousel"
               />
               <div class="carousel-caption d-block">
@@ -202,7 +214,11 @@
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <img src="images/carousel/plants.jpg" class="w-100 my-carousel" />
+              <img
+                src="images/carousel/plants.jpg"
+                alt="slides"
+                class="w-100 my-carousel"
+              />
               <div class="carousel-caption d-block">
                 <h3 class="fs-2 fw-bold my-cour-h">
                   Care for Your Garden with Love, and We’ll Help You!
@@ -218,6 +234,7 @@
             <div class="carousel-item" data-bs-interval="2000">
               <img
                 src="images/carousel/firewood.jpg"
+                alt="slides"
                 class="w-100 my-carousel"
               />
               <div class="carousel-caption d-block">
@@ -239,6 +256,7 @@
             type="button"
             data-bs-target="#carouselShopPresentation"
             data-bs-slide="prev"
+            aria-label="Previous"
           >
             <span
               class="carousel-control-prev-icon my-icon-size"
@@ -251,6 +269,7 @@
             type="button"
             data-bs-target="#carouselShopPresentation"
             data-bs-slide="next"
+            aria-label="Next"
           >
             <span
               class="carousel-control-next-icon my-icon-size"
@@ -271,7 +290,7 @@
               href="https://www.thegardenshop.ie/blog/"
               class="d-flex justify-content-center align-items-center text-decoration-none my-link gap-3 justify-content-center"
               target="_blank"
-              rel="”nofollow”"
+              rel="nofollow"
             >
               <img src="images/benefits/blog.jpg" alt="blog" />
               <div class="text-center">
@@ -290,7 +309,7 @@
               href="https://www.thegardenshop.ie/delivery/"
               class="d-flex justify-content-center align-items-center text-decoration-none my-link gap-3 justify-content-center"
               target="_blank"
-              rel="”nofollow”"
+              rel="nofollow"
             >
               <img src="images/benefits/delivery.png" alt="delivery" />
               <div class="text-center">
@@ -309,7 +328,7 @@
               href="https://www.thegardenshop.ie/how-to-garden/"
               class="d-flex justify-content-center align-items-center text-decoration-none my-link gap-3 justify-content-center"
               target="_blank"
-              rel="”nofollow”"
+              rel="nofollow"
             >
               <img src="images/benefits/garden.jpg" alt="garden" />
               <div class="text-center">
@@ -334,7 +353,7 @@
             <a
               href=" https://www.facebook.com/TheGardenShop.ie"
               target="_blank"
-              rel="”nofollow”"
+              rel="nofollow"
             >
               <img
                 src="images/network-icons/facebook.png"
@@ -347,7 +366,7 @@
             <a
               href=" https://twitter.com/GardenShop_ie"
               target="_blank"
-              rel="”nofollow”"
+              rel="nofollow"
             >
               <img
                 src="images/network-icons/twitter.png"
@@ -360,7 +379,7 @@
             <a
               href="https://www.youtube.com/user/TheGardenShopIreland"
               target="_blank"
-              rel="”nofollow”"
+              rel="nofollow"
             >
               <img
                 src="images/network-icons/youtube.png"
@@ -373,7 +392,7 @@
             <a
               href="https://www.pinterest.com/thegardenshop1/"
               target="_blank"
-              rel="”nofollow”"
+              rel="nofollow"
             >
               <img
                 src="images/network-icons/pintertest.png"
@@ -397,14 +416,14 @@
               class="my-copyright-link my-after-link text-decoration-none text-black fs-6"
               href="https://www.thegardenshop.ie/privacy-policy/"
               target="_blank"
-              rel="”nofollow”"
+              rel="nofollow"
               >Privacy Policy</a
             >
             <a
               class="my-copyright-link text-decoration-none text-black fs-6"
               href="https://www.thegardenshop.ie/terms-and-conditions/"
               target="_blank"
-              rel="”nofollow”"
+              rel="nofollow"
               >Terms & Conditions</a
             >
           </div>

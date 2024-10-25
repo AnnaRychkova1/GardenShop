@@ -7,7 +7,7 @@
   margin-left: 0;
 }
 
-.my-nav {
+.my-nav-list {
   background-color: var(--accent-light-color);
   --bs-nav-link-color: var(--bs-white);
 }

@@ -17,7 +17,7 @@
   </head>
   <body>
     <header
-      class="header container-fluid py-3 row w-100 align-items-center my-header"
+      class="header container-fluid py-3 row align-items-center my-header"
     >
       <div class="col-4 col-md-3">
         <a
@@ -35,9 +35,13 @@
       </div>
       <!-- When screen-width is < lg the cart is between logo and nav-bar -->
       <div
-        class="col-4 col-md-3 d-flex justify-content-start align-items-center d-flex d-lg-none gap-3"
+        class="col-4 col-md-3 d-flex justify-content-start align-items-center d-lg-none gap-3"
       >
-        <button type="button" class="btn position-relative">
+        <button
+          type="button"
+          class="btn position-relative"
+          aria-label="View Cart"
+        >
           <img src="images/cart.png" alt="cart" class="placeholder-wave" />
           <span
             class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger my-cart-quantity"
@@ -48,7 +52,6 @@
         </button>
         <p class="my-cart-sum fs-6 mb-0">Cart is empty</p>
       </div>
-
       <nav
         class="navbar navbar-expand-lg col-4 col-md-6 col-lg-7 d-flex justify-content-center"
       >
@@ -69,12 +72,7 @@
             id="navbarSupportedContent"
           >
             <ul
-              class="navbar-nav me-auto mb-2 mb-lg-0 nav-fill gap-2 p-2 rounded-5 shadow-sm w-100"
-              style="
-                --bs-nav-link-color: #ffffff;
-
-                background-color: #a1bf42;
-              "
+              class="navbar-nav me-auto mb-2 mb-lg-0 nav-fill gap-2 p-2 rounded-5 shadow-sm w-100 my-nav-list"
             >
               <li class="nav-item">
                 <a
@@ -100,9 +98,13 @@
       </nav>
       <!-- When screen-width is > lg the cart is at the end of the header -->
       <div
-        class="col-4 col-md-3 col-lg-2 d-flex justify-content-end align-items-center d-none d-lg-flex gap-3"
+        class="col-4 col-md-3 col-lg-2 justify-content-end align-items-center d-none d-lg-flex gap-3"
       >
-        <button type="button" class="btn position-relative">
+        <button
+          type="button"
+          class="btn position-relative"
+          aria-label="View Cart"
+        >
           <img src="images/cart.png" alt="cart" class="placeholder-wave" />
           <span
             class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger my-cart-quantity"
@@ -120,7 +122,9 @@
           Garden Plants
         </h2>
         <form id="my-plant-search-form" action="">
-          <label for="my-search-input"></label>
+          <label for="my-search-input" class="visually-hidden"
+            >Search for a plant</label
+          >
           <input
             type="text"
             id="my-search-input"
@@ -184,7 +188,7 @@
               Indoor Plants
             </h3>
             <ul
-              class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-indoor-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
+              class="col-1 cl-md-2 col-lg-3 col-xl-4 my-indoor-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
             ></ul>
           </div>
           <div class="py-3">
@@ -195,7 +199,7 @@
               Climbing Plants
             </h3>
             <ul
-              class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-climbing-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
+              class="col-1 col-md-2 col-lg-3 col-xl-4 my-climbing-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
             ></ul>
           </div>
           <div class="py-3">
@@ -206,7 +210,7 @@
               Flower Bulbs
             </h3>
             <ul
-              class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-bulbs-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
+              class="col-1 col-md-2 col-lg-3 col-xl-4 my-bulbs-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
             ></ul>
           </div>
           <div class="py-3">
@@ -217,7 +221,7 @@
               Fruit & Herb Plants
             </h3>
             <ul
-              class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-fruit-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
+              class="col-1 col-md-2 col-lg-3 col-xl-4 my-fruit-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
             ></ul>
           </div>
           <div class="py-3">
@@ -228,7 +232,7 @@
               Trees
             </h3>
             <ul
-              class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-trees-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
+              class="col-1 col-md-2 col-lg-3 col-xl-4 my-trees-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
             ></ul>
           </div>
         </div>
@@ -240,7 +244,7 @@
             All plants by search
           </h3>
           <ul
-            class="cl-1 cl-md-2 cl-lg-3 cl-xl-4 my-search-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
+            class="col-1 col-md-2 col-lg-3 col-xl-4 my-search-plants list-unstyled d-flex justify-content-start my-4 align-items-baseline flex-wrap"
           ></ul>
         </div>
       </section>
@@ -250,12 +254,12 @@
         class="container d-block d-sm-flex flex-row gap-4 p-4 align-items-center"
       >
         <h3 class="my-contact-h mb-0">Follow us</h3>
-        <ul class="my-network-list d-flex gap-4 mb-0">
+        <ul class="my-network-list d-flex gap-4 mb-0 list-unstyled">
           <li>
             <a
               href=" https://www.facebook.com/TheGardenShop.ie"
               target="_blank"
-              rel="”nofollow”"
+              rel="nofollow"
             >
               <img
                 src="images/network-icons/facebook.png"
@@ -268,7 +272,7 @@
             <a
               href=" https://twitter.com/GardenShop_ie"
               target="_blank"
-              rel="”nofollow”"
+              rel="nofollow"
             >
               <img
                 src="images/network-icons/twitter.png"
@@ -281,7 +285,7 @@
             <a
               href="https://www.youtube.com/user/TheGardenShopIreland"
               target="_blank"
-              rel="”nofollow”"
+              rel="nofollow"
             >
               <img
                 src="images/network-icons/youtube.png"
@@ -294,7 +298,7 @@
             <a
               href="https://www.pinterest.com/thegardenshop1/"
               target="_blank"
-              rel="”nofollow”"
+              rel="nofollow"
             >
               <img
                 src="images/network-icons/pintertest.png"
@@ -318,14 +322,14 @@
               class="my-copyright-link my-after-link text-decoration-none text-black fs-6"
               href="https://www.thegardenshop.ie/privacy-policy/"
               target="_blank"
-              rel="”nofollow”"
+              rel="nofollow"
               >Privacy Policy</a
             >
             <a
               class="my-copyright-link text-decoration-none text-black fs-6"
               href="https://www.thegardenshop.ie/terms-and-conditions/"
               target="_blank"
-              rel="”nofollow”"
+              rel="nofollow"
               >Terms & Conditions</a
             >
           </div>

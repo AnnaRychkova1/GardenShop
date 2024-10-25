@@ -4,12 +4,14 @@
 }
 
 .my-submit-btn {
+  color: var(--brown-color) !important;
   background-color: var(--accent-light-color);
 }
 
 .my-submit-btn:hover,
 .my-submit-btn:focus,
 .my-submit-btn:focus-visible {
+  color: var(--bs-white) !important;
   background-color: var(--accent-dark-color);
 }
 
@@ -17,7 +19,7 @@
   color: var(--accent-dark-color);
 }
 
-.invalid-feedback {
+.my-invalid-feedback {
   display: none;
   color: red;
   position: absolute;
@@ -27,6 +29,6 @@
   font-size: 0.875rem;
 }
 
-.show-error {
+.my-show-error {
   display: block;
 }

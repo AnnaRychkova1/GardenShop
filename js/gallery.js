@@ -94,6 +94,11 @@ function handleSearchPlants(plantsData) {
 function renderPlantsBySearch(plantsData) {
   searchList.innerHTML = ""; // Clear previous content
 
+  if (plantsData.length === 0) {
+    searchList.innerHTML = `<li class="py-2 px-1">No plants found matching your search criteria.</li>`;
+    return;
+  }
+
   plantsData.forEach((plant) => {
     const plantHTML = createPlantList(plant);
     searchList.innerHTML += plantHTML;
@@ -197,11 +202,11 @@ function createPlantList(plant) {
         </div>
         ${
           plant.src.length > 1
-            ? `<button class="carousel-control-prev custom-carousel-control" type="button" data-bs-target="#carousel-${plant.id}" data-bs-slide="prev">
+            ? `<button class="carousel-control-prev custom-carousel-control" type="button" aria-label="Previous" data-bs-target="#carousel-${plant.id}" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next custom-carousel-control" type="button" data-bs-target="#carousel-${plant.id}" data-bs-slide="next">
+                <button class="carousel-control-next custom-carousel-control" type="button" aria-label="Next" data-bs-target="#carousel-${plant.id}" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button >`
@@ -219,17 +224,17 @@ function createPlantList(plant) {
           };">${plant.availability ? "In Stock" : "Out of Stock"}</p>
           <div class="my-container-quantity d-flex gap-3 align-items-center">
               <span>Quantity</span>
-              <button class="my-subtract-btn btn fw-bold fs-5 p-2" ${
+              <button class="my-subtract-btn btn fw-bold fs-5 p-2" aria-label="Subtract quantity" ${
                 !plant.availability ? "disabled" : ""
               }>&minus;</button>    
               <span class="my-quantity fw-medium fs-5">${
                 plant.availability ? "1" : "0"
               }</span>
-              <button class="my-add-btn btn fw-bold fs-5 p-2" ${
+              <button class="my-add-btn btn fw-bold fs-5 p-2" aria-label="Add quantity" ${
                 !plant.availability ? "disabled" : ""
               }>&plus;</button> 
           </div>
-          <div class="d-flex justify-content-center"> <button class="my-add-to-cart-btn btn text-white fs-5 fw-medium px-5 py-2 mt-2" data-plant-id="${
+          <div class="d-flex justify-content-center"> <button class="my-add-to-cart-btn btn text-white fs-5 fw-medium px-5 py-2 mt-2" aria-label="Add to cart" data-plant-id="${
             plant.id
           }"  ${!plant.availability ? "disabled" : ""}>Add to Cart</button> 
           </div> 
