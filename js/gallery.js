@@ -2,8 +2,8 @@ const mainGallery = document.querySelector(".my-main-gallery");
 const searchGallery = document.querySelector(".my-search-gallery");
 const searchList = document.querySelector(".my-search-plants");
 const searchInput = document.getElementById("my-search-input");
-const cartQuantityElement = document.querySelector(".my-cart-quantity");
-const cartSumElement = document.querySelector(".my-cart-sum");
+const cartQuantityElement = document.querySelectorAll(".my-cart-quantity");
+const cartSumElement = document.querySelectorAll(".my-cart-sum");
 
 document.addEventListener("DOMContentLoaded", function () {
   // fetch my plants.json data
@@ -259,10 +259,18 @@ function updateCartInfo() {
     .toFixed(2);
 
   if (totalQuantity === 0) {
-    cartQuantityElement.textContent = "";
-    cartSumElement.textContent = "Cart is empty";
+    cartQuantityElement.forEach((element) => {
+      element.textContent = "";
+    });
+    cartSumElement.forEach((element) => {
+      element.textContent = "Cart is empty";
+    });
   } else {
-    cartQuantityElement.textContent = totalQuantity;
-    cartSumElement.textContent = `Total: €${totalSum}`;
+    cartQuantityElement.forEach((element) => {
+      element.textContent = totalQuantity;
+    });
+    cartSumElement.forEach((element) => {
+      element.textContent = `Total: €${totalSum}`;
+    });
   }
 }
