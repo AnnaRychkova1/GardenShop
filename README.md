@@ -1,4 +1,4 @@
-# :green_heart: GardenShop
+# 🏡 GardenShop
 
 ## :dart: Overview
 
@@ -36,8 +36,9 @@ The application consists of three main pages:
 </a>
 </p>
 
-### :large_blue_diamond: Libraries and Tools
+### :large_blue_diamond: Tools
 
+- **Local Storage**: Utilized for saving cart data, including total items and total price, which updates in real-time.
 - **Image Carousel**: Bootstrap's carousel component for displaying plant images.
 - **Modal**: Custom modal for displaying larger images of plants with navigation controls.
 - **Form Validation**: Basic JavaScript for form validation to check all input fields.
@@ -59,20 +60,20 @@ function validatePhone() {
 }
 ```
 
-- **Local Storage**: Utilized for saving cart data, including total items and total price, which updates in real-time.
-
 ### :large_blue_diamond: Utilities
 
 <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank" rel="noreferrer">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap" width="40" height="40" />
-          
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap" width="40" height="40" />       
 </a>
 <a href="https://github.com" target="_blank" rel="noreferrer">
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original-wordmark.svg" alt="github" width="40" height="40"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" alt="github" width="40" height="40" />
 </a>
 
-**Completed by:** Anna Richkova  
-**GitHub:** [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white&labelColor=white&color=0A66C2&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fannarychkova1%2F)](https://www.linkedin.com/in/annarychkova1/)
-**LinkedIn:** [![Static Badge](https://img.shields.io/badge/LinkedIn%20-%230A66C2?style=flat&logo=linkedin&logoColor=%230A66C2&labelColor=white&color=%230A66C2&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fannarychkova1%2F)](https://www.linkedin.com/in/annarychkova1/)
+## Completed by:
+**Anna Rychkova**  
+[![Static Badge](https://img.shields.io/badge/GitHub-0A66C2?style=flat&logo=github&logoColor=black&labelColor=white&color=181717&link=https%3A%2F%2Fgithub.com%2FAnnaRychkova1)](https://www.linkedin.com/in/annarychkova1/)
+[![Static Badge](https://img.shields.io/badge/LinkedIn%20-%230A66C2?style=flat&logo=linkedin&logoColor=%230A66C2&labelColor=white&color=%230A66C2&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fannarychkova1%2F)](https://www.linkedin.com/in/annarychkova1/)
 
-This project is part of the "Web Design" module from the Higher Diploma in Science in Computing program at <img src="images/NCI_logo.png" alt="bootstrap" width="80" height="60" /> [National College of Ireland](https://www.ncirl.ie/).
+This project is part of the "Web Design" module from the Higher Diploma in Science in Computing program at
+
+# NCI  <a href="https://github.com" target="_blank" rel="noreferrer"><img src="images/NCI_logo.png" alt="bootstrap" width="100" height="40" /></a>
