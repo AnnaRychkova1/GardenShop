@@ -77,4 +77,6 @@ function validatePhone() {
 
 This project is part of the "Web Design" module from the Higher Diploma in Science in Computing program at
 
-# NCI <a href="https://github.com" target="_blank" rel="noreferrer"><img src="images/NCI_logo.png" alt="bootstrap" width="100" height="40" /></a>
+# NCI
+
+<a href="https://github.com" target="_blank" rel="noreferrer"><img src="images/NCI_logo.png" alt="bootstrap" width="200" height="80" /></a>
