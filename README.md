@@ -70,10 +70,11 @@ function validatePhone() {
 </a>
 
 ## Completed by:
+
 **Anna Rychkova**  
-[![Static Badge](https://img.shields.io/badge/GitHub-0A66C2?style=flat&logo=github&logoColor=black&labelColor=white&color=181717&link=https%3A%2F%2Fgithub.com%2FAnnaRychkova1)](https://www.linkedin.com/in/annarychkova1/)
+[![Static Badge](https://img.shields.io/badge/GitHub-0A66C2?style=flat&logo=github&logoColor=black&labelColor=white&color=181717&link=https%3A%2F%2Fgithub.com%2FAnnaRychkova1)](https://github.com/AnnaRychkova1)
 [![Static Badge](https://img.shields.io/badge/LinkedIn%20-%230A66C2?style=flat&logo=linkedin&logoColor=%230A66C2&labelColor=white&color=%230A66C2&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fannarychkova1%2F)](https://www.linkedin.com/in/annarychkova1/)
 
 This project is part of the "Web Design" module from the Higher Diploma in Science in Computing program at
 
-# NCI  <a href="https://github.com" target="_blank" rel="noreferrer"><img src="images/NCI_logo.png" alt="bootstrap" width="100" height="40" /></a>
+# NCI <a href="https://github.com" target="_blank" rel="noreferrer"><img src="images/NCI_logo.png" alt="bootstrap" width="100" height="40" /></a>
