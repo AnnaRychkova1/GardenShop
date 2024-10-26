@@ -13,3 +13,19 @@
   --brown-color: #613f07;
   --dark-green: #2c6308;
 }
+
+#scrollTopBtn {
+  color: var(--brown-color);
+  background-color: var(--accent-light-color);
+  display: none;
+  position: fixed;
+  bottom: 56px;
+  right: 30px;
+  z-index: 99;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1), -4px -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#scrollTopBtn:hover {
+  background-color: var(--accent-dark-color);
+  color: var(--bs-white) !important;
+}
