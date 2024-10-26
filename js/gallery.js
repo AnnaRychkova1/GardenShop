@@ -1,5 +1,3 @@
-// import updateCartInfo from "cart-list";
-
 const mainGallery = document.querySelector(".my-main-gallery");
 const searchGallery = document.querySelector(".my-search-gallery");
 const searchList = document.querySelector(".my-search-plants");
@@ -94,7 +92,7 @@ function handleSearchPlants(plantsData) {
 
 // Function to render all plants without filtering
 function renderPlantsBySearch(plantsData) {
-  searchList.innerHTML = ""; // Clear previous content
+  searchList.innerHTML = "";
 
   if (plantsData.length === 0) {
     searchList.innerHTML = `<li class="py-2 px-1">No plants found matching your search criteria.</li>`;
@@ -116,8 +114,8 @@ function handleClickOutsideSearch(event) {
     // Clear search results and hide the search gallery
     searchGallery.classList.add("visually-hidden");
     mainGallery.classList.remove("visually-hidden");
-    searchInput.value = ""; // Reset the input field
-    searchList.innerHTML = ""; // Clear the search results
+    searchInput.value = "";
+    searchList.innerHTML = "";
   }
 }
 
@@ -151,12 +149,12 @@ function handleClickAddCart(event, plantsData) {
     const currentQuantity = parseInt(quantityElement.textContent, 10);
 
     // Find the plant in plantsData
-    const plant = plantsData.find((p) => p.id === String(plantId)); // Ensure we are comparing strings
+    const plant = plantsData.find((p) => p.id === String(plantId));
 
     // Check if plant was found
     if (!plant) {
-      console.error("Plant not found in data"); // Log the error
-      return; // Exit if plant is not found
+      console.error("Plant not found in data");
+      return;
     }
 
     const currentCart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -250,3 +248,68 @@ function createPlantList(plant) {
     </li>
     `;
 }
+
+// Modal window
+
+let currentImageIndex = 0;
+let modalImages = [];
+
+// Function to open the modal window and add images
+function openImageModal(images) {
+  modalImages = images;
+  currentImageIndex = 0;
+  const modal = document.getElementById("imageModal");
+  const carouselInner = document.querySelector(
+    "#modalCarousel .carousel-inner"
+  );
+
+  // Clear previous content of the modal carousel
+  carouselInner.innerHTML = "";
+
+  // Add new images to the modal window
+  modalImages.forEach((src, index) => {
+    const imgElement = document.createElement("img");
+    imgElement.src = src;
+    imgElement.classList.add("carousel-item");
+    if (index === 0) imgElement.classList.add("active"); // Перше зображення активне
+    carouselInner.appendChild(imgElement);
+  });
+
+  // Display the modal window
+  modal.style.display = "flex";
+}
+
+// Close the modal window
+document.querySelector(".my-close").onclick = function () {
+  document.getElementById("imageModal").style.display = "none";
+};
+
+// Functions for switching images in the modal window
+function showImage(index) {
+  const carouselItems = document.querySelectorAll(
+    "#modalCarousel .carousel-item"
+  );
+  carouselItems.forEach((item) => item.classList.remove("active"));
+  carouselItems[index].classList.add("active");
+}
+
+function nextImage() {
+  currentImageIndex = (currentImageIndex + 1) % modalImages.length;
+  showImage(currentImageIndex);
+}
+
+function prevImage() {
+  currentImageIndex =
+    (currentImageIndex - 1 + modalImages.length) % modalImages.length;
+  showImage(currentImageIndex);
+}
+
+// Adding a click event handler on the card image
+document.addEventListener("click", function (event) {
+  if (event.target.matches(".my-plant-item img")) {
+    const images = Array.from(
+      event.target.closest(".carousel").querySelectorAll("img")
+    ).map((img) => img.src);
+    openImageModal(images);
+  }
+});

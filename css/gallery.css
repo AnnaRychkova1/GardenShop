@@ -122,3 +122,33 @@
     margin-right: 300px;
   }
 }
+
+/* Modal window */
+
+.modal {
+  background-color: rgba(27, 35, 26, 0.8);
+}
+
+.modal-content {
+  max-width: 600px;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.my-close {
+  z-index: 100;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-shadow: 2px 2px 4px var(--accent-light-color);
+}
+
+.my-close:hover,
+.my-close:focus,
+.my-close:focus-visible {
+  background-color: var(--accent-dark-color);
+  color: var(--bs-white) !important;
+}

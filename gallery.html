@@ -377,6 +377,37 @@
         </div>
       </div>
     </footer>
+    <!-- Modal window for gallery -->
+    <div
+      id="imageModal"
+      class="modal align-items-center justify-content-center"
+    >
+      <div class="modal-content rounded-4">
+        <button
+          type="button"
+          class="btn my-close px-2 py-0 fw-bold fs-2 text-black"
+          aria-label="Close"
+        >
+          &times;
+        </button>
+        <div id="modalCarousel" class="carousel">
+          <div class="carousel-inner rounded-4"></div>
+          <button
+            class="carousel-control-prev text-black fs-1 fw-light"
+            onclick="prevImage()"
+          >
+            &#10094;
+          </button>
+          <button
+            class="carousel-control-next text-black fs-1 fw-light"
+            onclick="nextImage()"
+          >
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll to top button -->
     <button
       type="button"
       id="scrollTopBtn"

@@ -14,6 +14,8 @@
   --dark-green: #2c6308;
 }
 
+/* Scroll btn */
+
 #scrollTopBtn {
   color: var(--brown-color);
   background-color: var(--accent-light-color);
@@ -25,7 +27,9 @@
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1), -4px -4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#scrollTopBtn:hover {
+#scrollTopBtn:hover,
+#scrollTopBtn:focus,
+#scrollTopBtn:focus-visible {
   background-color: var(--accent-dark-color);
   color: var(--bs-white) !important;
 }
