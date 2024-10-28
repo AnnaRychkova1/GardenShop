@@ -22,7 +22,7 @@ function renderCartItems() {
           <li class="dropdown-item my-cart-item d-flex justify-content-between align-items-center">
             <h4 class="fs-6 col-8 text-wrap">${item.name}</h4>
             <span class="fs-6 col-1">${item.quantity}</span>
-            <button type="button" class="btn my-remove-item-btn col-1 py-1 fw-bolder d-flex align-items-center justify-content-center" aria-label="Delete" data-plant-id="${item.id}"><span>&times;</span></button>
+            <button type="button" class="btn my-remove-item-btn col-1 py-1 fw-bolder d-flex justify-content-center" aria-label="Delete" data-plant-id="${item.id}">&times;</button>
           </li>
         `;
         cartList.innerHTML += cartItemHTML;
@@ -48,16 +48,16 @@ function removeCartItem(event) {
     const updatedCart = cart.filter((item) => item.id !== plantId);
 
     localStorage.setItem("cart", JSON.stringify(updatedCart));
-    renderCartItems(); // Re-render the cart after removal
-    updateCartInfo(); // Update the cart info on the main page if necessary
+    renderCartItems();
+    updateCartInfo();
   }
 }
 
 // Function to clear the entire cart
 function clearCart() {
   localStorage.removeItem("cart");
-  renderCartItems(); // Re-render the cart to show it is empty
-  updateCartInfo(); // Update the cart info on the main page if necessary
+  renderCartItems();
+  updateCartInfo();
 }
 
 // Function to handle checkout (dummy implementation)

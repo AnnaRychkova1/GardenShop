@@ -68,6 +68,10 @@
 .my-cart-item:focus-visible {
   background-color: rgba(161, 191, 66, 0.2);
 }
+.my-remove-item-btn {
+  display: flex;
+  justify-content: center;
+}
 
 .my-remove-item-btn,
 .my-checkout-btn,

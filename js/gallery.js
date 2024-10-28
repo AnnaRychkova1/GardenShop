@@ -277,6 +277,7 @@ function openImageModal(images) {
 
   // Display the modal window
   modal.style.display = "flex";
+  document.addEventListener("click", closeModalOnOutsideClick);
 }
 
 // Close the modal window
@@ -313,3 +314,14 @@ document.addEventListener("click", function (event) {
     openImageModal(images);
   }
 });
+
+// Function to close modal on outside click
+function closeModalOnOutsideClick(event) {
+  const modal = document.getElementById("imageModal");
+  const modalContent = modal.querySelector(".carousel");
+
+  if (!modalContent.contains(event.target)) {
+    modal.style.display = "none";
+    document.removeEventListener("click", closeModalOnOutsideClick);
+  }
+}

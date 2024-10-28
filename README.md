@@ -13,12 +13,14 @@ The application consists of three main pages:
 ## :star: Features
 
 - **Plant Cards**: Each plant is displayed with an image, name, price, availability status, and an option to add to the cart. The data for the product images is sourced from a custom JSON file.
-- **Image Carousel**: Users can view multiple images of each plant in a modal with navigation buttons to switch between images.
-- **Responsive Design**: The website is fully responsive, ensuring a seamless experience across devices.
-- **Real-time Cart Updates**: The shopping cart displays real-time data, including the total number of items and the total price, sourced from local storage.
 - **Modal for Enlarged Images**: Clicking on a product image opens a modal displaying a larger version of the image.
-- **Form Validation**: The contact form validates all input fields to ensure users provide correct data.
-- **Dropdown Cart Selection**: A dropdown list allows users to select their query type when contacting the support team.
+- **Discount Badge Labeling**: All discounted products, as specified in the JSON file, are marked with a label on their image.
+- **Image Carousel**: Users can view multiple images of each plant in a modal with navigation buttons to switch between images.
+- **Search form**: The search form allows users to quickly find plants by name, displaying relevant results in a separate gallery and restoring the main view when clicked outside.
+- **Real-time Cart Updates**: The shopping cart displays real-time data, including the total number of items and the total price, sourced from local storage.
+- **Dropdown Cart Selection**: The drop-down list allows users to view the contents of the shopping cart and provides options to remove individual items or clear all items from the cart.
+- **Contact form and its validation**: The contact form validates all input fields to ensure users provide correct data, collects the entered information, and currently logs this data to the console.
+- **Responsive Design**: The website is fully responsive, ensuring a seamless experience across devices.
 
 ## :computer: Technical Stack
 
