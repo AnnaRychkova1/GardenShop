@@ -1,0 +1,53 @@
+.notification {
+  position: relative;
+  background-color: rgba(255, 204, 0, 0.8);
+  color: #333;
+  padding: 0 0 10px;
+  border: 1px solid #ff9900;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  text-align: center;
+}
+
+.info-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.close-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.notification h2 {
+  background-color: #ffcc00;
+  padding: 10px;
+  font-size: 14px;
+  margin: 0;
+}
+
+.notification p {
+  margin: 0;
+}
+
+.notification a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.notification button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ffcc00;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.notification button:hover {
+  background-color: #ffe600;
+}
