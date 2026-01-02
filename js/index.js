@@ -66,3 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // add notification to the container
   container.innerHTML = notificationHTML;
 });
+
+// year in footer
+document.getElementById("year").textContent = new Date().getFullYear();
